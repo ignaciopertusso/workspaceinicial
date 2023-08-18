@@ -1,14 +1,14 @@
 
 
-const inputContrasena = document.getElementById("contrasena");
+const contrasena = document.getElementById("floatingPassword");
 const botonMostrarContrasena = document.getElementById("mostrarContrasena");
 
 botonMostrarContrasena.addEventListener("click", function () {
-  if (inputContrasena.type === "password") {
-    inputContrasena.type = "text";
+  if (contrasena.type === "password") {
+    contrasena.type = "text";
     botonMostrarContrasena.textContent = "Ocultar contraseña";
   } else {
-    inputContrasena.type = "password";
+    contrasena.type = "password";
     botonMostrarContrasena.textContent = "Mostrar contraseña";
   }
 });
